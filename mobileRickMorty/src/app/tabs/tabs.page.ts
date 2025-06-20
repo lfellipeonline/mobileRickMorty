@@ -24,7 +24,6 @@ export class TabsPage implements OnInit, OnDestroy {
       // Se o ID não for nulo, mostrar
       this.showDetailsTab = id !== null;
       if (id) {
-        // Constrói a URL correta para a aba
         this.detailsTabUrl = `/tabs/tab2/${id}`;
       }
     });
