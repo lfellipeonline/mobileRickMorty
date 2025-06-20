@@ -1,0 +1,67 @@
+.about-card {
+  background: #2c313d;
+  border-radius: 12px;
+  box-shadow: none;
+  border-left: 4px solid var(--ion-color-primary);
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.profile-avatar {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 16px auto;
+  border: 3px solid var(--ion-color-secondary-tint);
+
+  ion-icon {
+    width: 100%;
+    height: 100%;
+    color: var(--ion-color-secondary-tint);
+  }
+}
+
+.about-card ion-card-header {
+  text-align: center;
+  padding-top: 0;
+}
+
+.about-card ion-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--ion-text-color);
+}
+
+.about-card ion-card-subtitle {
+  color: var(--ion-color-medium-shade);
+  font-size: 1rem;
+}
+
+.about-card ion-list {
+  background: transparent;
+}
+
+.about-card ion-item {
+  --background: transparent;
+  --padding-start: 0;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --min-height: 60px;
+
+  ion-icon {
+    font-size: 24px;
+    color: var(--ion-color-secondary);
+    margin-right: 16px;
+  }
+  
+  h2 {
+    font-size: 0.8rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: var(--ion-color-medium-shade);
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--ion-text-color);
+  }
+}

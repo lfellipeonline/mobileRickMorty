@@ -1,0 +1,38 @@
+
+
+.character-card {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.1);
+  
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.character-card ion-card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  
+  color: var(--ion-color-primary); 
+}
+
+.character-card ion-card-subtitle {
+  color: var(--ion-color-medium-shade);
+}
+
+.character-card img {
+  display: block;
+  width: 90%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}

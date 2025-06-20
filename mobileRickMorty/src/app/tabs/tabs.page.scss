@@ -1,1 +1,30 @@
+.tab-bar {
+  border-top: 1px solid var(--ion-color-medium);
+  background-color: rgba($color: #000000, $alpha: 0.2);
+  backdrop-filter: blur(10px);
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 120px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
 
+.tab-button {
+  border-top: 1px solid var(--ion-color-medium);
+  background: rgba($color: #000000, $alpha: 0.1);
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 50px;
+  transition: transform 0.3s ease-in-out;
+  margin: 10px;
+
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.tab-button:active{
+    scale: 95%;
+    transition: scale 0.1s ease-in-out;
+}

@@ -8,10 +8,11 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
-  student = {
+  estudante = {
     name: 'Luiz Felipe Rodrigues de Melo',
     email: 'mail.lfellipe@gmail.com',
     curso: 'Análise e Desenvolvimento de Sistemas',
+    website: 'lfellipestudios.netlify.app',
   };
 
   constructor() {}

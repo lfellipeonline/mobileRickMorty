@@ -1,29 +1,24 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Personagens de Rick and Morty
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <ion-header>
     <ion-toolbar>
-      <ion-title size="large">Personagens</ion-title>
+      <ion-title size="large">Personagens de Rick And Morty</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let char of characters" 
+               size="12" size-sm="6" size-md="4" size-lg="3">
+        <ion-card class="character-card" (click)="showDetails(char.id)" [button]="true">
+          <img [src]="char.image" alt="Imagem de {{ char.name }}" />
+          <ion-card-header>
+            <ion-card-title>{{ char.name }}</ion-card-title>
+            <ion-card-subtitle>{{ char.species }} - {{ char.status }}</ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
 
-  <ion-list>
-    <ion-item *ngFor="let char of characters" [button]="true" (click)="showDetails(char.id)">
-      <ion-avatar slot="start">
-        <img [src]="char.image" />
-      </ion-avatar>
-      <ion-label>
-        <h2>{{ char.name }}</h2>
-        <p>{{ char.species }} - {{ char.status }}</p>
-      </ion-label>
-    </ion-item>
-  </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
   <ion-infinite-scroll (ionInfinite)="loadMore($event)">
     <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Carregando mais personagens...">

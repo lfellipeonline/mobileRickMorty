@@ -1,8 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Sobre o Projeto
-    </ion-title>
+    <ion-title> Sobre o Projeto </ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -14,32 +12,36 @@
   </ion-header>
 
   <div class="ion-padding">
-    <ion-card>
+    <ion-card class="about-card">
+      
+      <ion-avatar class="profile-avatar">
+        <ion-icon name="person-circle-outline"></ion-icon>
+      </ion-avatar>
+
       <ion-card-header>
-        <ion-card-title>Informações do Aluno</ion-card-title>
+        <ion-card-title>{{ estudante.name }}</ion-card-title>
+        <ion-card-subtitle>{{ estudante.curso }}</ion-card-subtitle>
       </ion-card-header>
+
       <ion-card-content>
         <ion-list>
           <ion-item>
+            <ion-icon name="mail-outline" slot="start"></ion-icon>
             <ion-label>
-              <h3>Nome:</h3>
-              <p>{{ student.name }}</p>
+              <h2>Email</h2>
+              <p>{{ estudante.email }}</p>
             </ion-label>
           </ion-item>
-          <ion-item>
+          <ion-item lines="none">
+            <ion-icon name="globe-outline" slot="start"></ion-icon>
             <ion-label>
-              <h3>Email:</h3>
-              <p>{{ student.email }}</p>
-            </ion-label>
-          </ion-item>
-          <ion-item>
-            <ion-label>
-              <h3>Curso:</h3>
-              <p>{{ student.curso }}</p>
+              <h2>Website</h2>
+              <p>{{ estudante.website }}</p>
             </ion-label>
           </ion-item>
         </ion-list>
       </ion-card-content>
+      
     </ion-card>
   </div>
 </ion-content>
