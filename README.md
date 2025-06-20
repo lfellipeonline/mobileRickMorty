@@ -46,21 +46,23 @@ ionic serve
 ionic capacitor run android
 ionic capacitor run ios
 ```
-## 👤 Autor
-Luiz Felipe
-Estudante de Análise e Desenvolvimento de Sistemas | UNINASSAU
-
----
 
 ## 📸Imagens do Projeto
 - Página inicial com seleção de personagens e aba de seleção de janelas com efeito de vidro líquido.
-  ![Página Inicial](https://github.com/user-attachments/assets/bfe723a7-e3b9-484a-9f88-a9db009c81aa)
+  ![Página Inicial](https://github.com/user-attachments/assets/3f6b2338-d7f2-46b7-b583-801f15297f7d)
 
 - Página de detalhes de personagens.
-  ![Descrição de Personagens](https://github.com/user-attachments/assets/16965924-407c-4603-9b56-f03cbe6a2945)
+  ![Detalhes do Personagem](https://github.com/user-attachments/assets/727fd8c0-c824-49bf-a700-b72a689155d6)
 
 - Página do Autor.
-  ![Dados do Autor](https://github.com/user-attachments/assets/c742c9ac-c80c-454f-9da2-16d7ccd6afdc)
+  ![Detalhes do Autor](https://github.com/user-attachments/assets/e930cb78-83be-402f-877f-6dcb2149c191)
+
+
+---
+
+## 👤 Autor
+Luiz Felipe
+Estudante de Análise e Desenvolvimento de Sistemas | UNINASSAU
 
 
 
