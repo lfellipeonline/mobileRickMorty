@@ -45,7 +45,22 @@ ionic serve
 # Ou para rodar no emulador
 ionic capacitor run android
 ionic capacitor run ios
-
-👤 Autor
+```
+## 👤 Autor
 Luiz Felipe
 Estudante de Análise e Desenvolvimento de Sistemas | UNINASSAU
+
+---
+
+## 📸Imagens do Projeto
+- Página inicial com seleção de personagens e aba de seleção de janelas com efeito de vidro líquido.
+  ![Página Inicial](https://github.com/user-attachments/assets/bfe723a7-e3b9-484a-9f88-a9db009c81aa)
+
+- Página de detalhes de personagens.
+  ![Descrição de Personagens](https://github.com/user-attachments/assets/16965924-407c-4603-9b56-f03cbe6a2945)
+
+- Página do Autor.
+  ![Dados do Autor](https://github.com/user-attachments/assets/c742c9ac-c80c-454f-9da2-16d7ccd6afdc)
+
+
+
