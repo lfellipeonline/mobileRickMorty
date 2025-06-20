@@ -31,7 +31,7 @@ npm install -g @ionic/cli
 
 💾 Como baixar e executar o projeto
 # Clone o repositório
-git clone https://github.com/seu-usuario/mobileRickMorty.git
+git clone https://github.com/lfellipeonline/mobileRickMorty.git
 
 # Acesse o diretório do projeto
 cd mobileRickMorty
