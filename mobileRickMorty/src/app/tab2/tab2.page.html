@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab1"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Detalhes do Personagem
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div *ngIf="character" class="ion-padding">
+    <ion-card>
+      <img [src]="character.image" />
+      <ion-card-header>
+        <ion-card-title>{{ character.name }}</ion-card-title>
+        <ion-card-subtitle>{{ character.species }}</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list lines="none">
+          <ion-item>
+            <ion-label>Status: {{ character.status }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Gênero: {{ character.gender }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Origem: {{ character.origin.name }}</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>Localização Atual: {{ character.location.name }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
