@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { NavigationStateService } from '../services/navigation-state.service';
 
 @Component({
   selector: 'app-tabs',
@@ -6,8 +8,32 @@ import { Component } from '@angular/core';
   styleUrls: ['tabs.page.scss'],
   standalone: false,
 })
-export class TabsPage {
+export class TabsPage implements OnInit, OnDestroy {
 
-  constructor() {}
+  // Variável para controlar a visibilidade da aba
+  showDetailsTab = false;
+  // Variável para guardar a URL dinâmica da aba
+  detailsTabUrl = '';
 
+  private stateSubscription!: Subscription;
+
+  constructor(private navigationStateService: NavigationStateService) {}
+
+  ngOnInit() {
+    this.stateSubscription = this.navigationStateService.activeCharacterId$.subscribe(id => {
+      // Se o ID não for nulo, mostrar
+      this.showDetailsTab = id !== null;
+      if (id) {
+        // Constrói a URL correta para a aba
+        this.detailsTabUrl = `/tabs/tab2/${id}`;
+      }
+    });
+  }
+
+  ngOnDestroy() {
+    // Evita explodir seu PC
+    if (this.stateSubscription) {
+      this.stateSubscription.unsubscribe();
+    }
+  }
 }
