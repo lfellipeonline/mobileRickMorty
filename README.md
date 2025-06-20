@@ -42,7 +42,7 @@ npm install
 # Execute o app no navegador
 ionic serve
 
-# Ou para rodar no emulador
+# Ou para rodar no emulador (necessita baixar o emulador)
 ionic capacitor run android
 ionic capacitor run ios
 ```
