@@ -28,3 +28,19 @@
     scale: 95%;
     transition: scale 0.1s ease-in-out;
 }
+
+@media screen and (max-width: 600px) {
+  .tab-bar {
+    position: fixed;
+    bottom: 0;
+    width: 90%;
+    padding: 10px;
+    border-radius: 20px;
+  }
+
+  .tab-button {
+    margin: 5px;
+    font-size: 12px;
+  }
+  
+}
