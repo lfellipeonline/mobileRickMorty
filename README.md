@@ -1,4 +1,4 @@
-##mobileRickMorty
+## mobileRickMorty
 
 Uma aplicação mobile desenvolvida com Ionic e Angular que consome a API pública "The Rick and Morty API". Uma Api divertida para os fans da série. Permite buscar informações sobre personagens, episódios e planetas.
 
